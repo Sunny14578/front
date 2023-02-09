@@ -1,6 +1,6 @@
 @font-face{
     font-family: a;
-    src : url(./font/abster-webfont.woff);
+    src : url(../fonts/abster-webfont.woff);
 }
 
 * {
@@ -22,7 +22,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border-bottom-color: #dee2e6;
+    border-bottom-style: solid;
+    border-block-width: 1px;
+    position : sticky;
+    top : 0px;
     /* align-item 영역의 수직방향 중앙에 위치시킨다. */
 }
 
@@ -46,4 +50,20 @@ nav > ul > li > a:hover{
     color : wheat;
 }
 
+div{
+    color : blue;
+}
 
+
+footer{
+    width: 80%;
+    height: 80px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-color: #dee2e6;
+    border-top-style: solid;
+    border-block-width: 1px;
+    /* align-item 영역의 수직방향 중앙에 위치시킨다. */
+}
