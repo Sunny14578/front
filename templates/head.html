@@ -4,4 +4,9 @@
     <meta charset="'UTF-8">
     <title>Pragmatic</title>
     <link rel="stylesheet" type = "text/css" href="{% static 'css/base.css' %}">
+
+    {% block extrahead %}
+        <link rel="stylesheet" type = "text/css" href="{% static 'css/firstpage.css' %}">
+    {% endblock %}
+
 </head>

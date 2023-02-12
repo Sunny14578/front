@@ -1,8 +1,42 @@
 {% extends 'base.html' %}
 
+
 {% block content %}
-<div class = "row">
-    <div class = "feature">
+
+ <div class = "main">
+    <div id = "canvas">
+        <input type = "radio" name = "slide" id =  "slide01" checked>
+        <input type = "radio" name = "slide" id =  "slide02" >
+        <div class = "slidewrap">
+            <ul class = "slidelist">
+                <li>
+                    <a>
+                        <div class = "imges" id = mainimg></div>
+                        <!--<img src = "/static/img/mainpage.jpg" class = "imges" id = mainimg>-->
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class = "imges" id = mainimg2></div>
+                       <!-- <img src = "/static/img/mainpage6.jpg" class = "imges">-->
+                    </a>
+                </li>
+
+                <div class = "slide-control">
+                    <div class = "control01">
+                        <label for ="slide02" class = "left"></label>
+                        <label for = "slide02" class = "right"></label>
+                    </div>
+
+                    <div class = "control02">
+                        <label for="slide01" class = "left"></label>
+                        <label for = "slide01" class = "right"></label>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div id = "a">
         <h3>
             Featured title
         </h3>
@@ -10,13 +44,7 @@
             Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
         </p>
     </div>
-    <div class = "feature">
-        <h3>
-            Featured title
-        </h3>
-        <p>
-            Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
-        </p>
-    </div>
-</div>
+
+ </div>
+
 {% endblock %}
